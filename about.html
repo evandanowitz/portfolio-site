@@ -5,10 +5,15 @@
 <head>
     <meta charset="utf-8">
     <title>About - Evan Danowitz</title>
-    <link rel="shortcut icon" href="img/favicon_initials.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="css/Normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,31 +21,17 @@
 
 <body>
     <header class="page-header">
-        <img class="page-header__item" src="img/name_logo.png" alt="Logo Image">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                </li>                
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-            </ul>            
-        </nav>
+        <img class="page-header__item" src="img/evan-danowitz-high-resolution-color-logo.png" alt="Logo Image">
+        <nav class="navigation-menu page-header__item borderYtoX">
+            <a href="index.html" role="menuitem" class="navigation-menu__item">HOME</a>
+            <a href="work.html" role="menuitem" class="navigation-menu__item">WORK</a>
+            <a href="about.html" role="menuitem" class="navigation-menu__item navigation-menu__item--active">ABOUT</a>
+            <a href="contact.html" role="menuitem" class="navigation-menu__item">CONTACT</a>
+    </nav>
     </header>
 
-    <div id="about-heading">
-        <h1>About</h1>
-    </div>        
-    
     <div class="about-me-intro-text">
-        <p>
+        <p class="typed">
             This page speaks to some of my skills and experience.
         </p>
     </div>
