@@ -115,6 +115,9 @@ button:focus {
     background-color: #fff;
     color: #000;
 }
+.buttons {
+    text-align: center;
+}
 
 .page-header {
     display: -webkit-box;
