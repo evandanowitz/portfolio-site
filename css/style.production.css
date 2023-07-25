@@ -47,7 +47,7 @@ a:focus {
 
 button {
     /* overwrites browser defaults and resets the border */
-    border: none;
+    border: 1.5px solid;
     display: inline-block;
     /* takes the font from the outer container */
     font-family: inherit;
@@ -60,7 +60,6 @@ button {
     padding: 10px;
     border-radius: 3px;
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid rgba(0,0,0,0.3);
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
@@ -83,6 +82,7 @@ button {
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
+
 button:hover {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
@@ -136,8 +136,8 @@ button:focus {
     text-align: right;
 }
 .page-header__item:first-child {
-    height: 250px;
-    width: 350px;
+    height: 350px;
+    width: 500px;
     float: left;
     margin: 0px 15px 15px 0px;
 }
@@ -176,12 +176,13 @@ td, th {
     max-width: 700px;
     margin: 0 auto;
 }
-#profile__portrait {
+.profile__portrait {
     float: left;
     width: 250px;
     height: auto;
     margin-right: 40px;
     border-radius: 50%;
+    text-align: center;
 }
 #evan {
     background-color: lightgray;
@@ -243,9 +244,8 @@ td, th {
     resize: none;
 }
 .form-submit {
-    display: block;
+    display: inline-block;
     clear: right;
-    text-align: center;
 }
 
 .download-cv-button {
@@ -253,6 +253,7 @@ td, th {
     margin-bottom: 15px;
 }
 
+/* Animation (nav menu) 257-297 */
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 .borderYtoX {
     font-family: 'Roboto Mono', monospace;
@@ -381,6 +382,7 @@ td, th {
             animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/* Animation (typing/blinking) 386-408 */
 .profile {
     font-family: "Roboto Mono", monospace;
     font-size: 24px;
