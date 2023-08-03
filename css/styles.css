@@ -137,11 +137,18 @@ p {
     margin: 0 auto;
 }
 #profile__portrait {
-    float: left;
-    width: 250px;
+    float: right;
+    width: 233px;
     height: auto;
     margin-right: 40px;
     border-radius: 50%;
+    transition: transform 0.5s; /* Add a transition for smooth animation */
+}
+  .profile__portrait:hover {
+    transform: scale(1.05); /* Increase the scale when hovering */
+}
+  .profile__portrait:active {
+    transform: scale(1); /* Restore the original scale when clicked */
 }
 .page-footer {
     clear: both;

@@ -137,13 +137,24 @@ td, th {
     margin: 0 auto;
 }
 .profile__portrait {
-    float: left;
+    float: center;
     width: 250px;
     height: auto;
     margin-right: 40px;
     border-radius: 50%;
-    text-align: center;
+    /* Add a transition for smooth animation */
+    transition: transform 0.5s;
 }
+.profile__portrait:hover {
+    /* Increase scale of image while hovering */
+    transform: scale(1.05);
+}
+.profile__portrait:active {
+    /* Restore original scale when clicked */
+    transform: scale(1);
+}
+
+
 /*
 #evan {
     background-color: lightgray;
