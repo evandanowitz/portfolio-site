@@ -228,6 +228,9 @@ html, body {
     width: 100%;
 }
 
+.mobile-menu {
+    display: none;
+}
 
 .svg-hometown {
     text-align: var(--align-center);
@@ -299,5 +302,11 @@ html, body {
     }
     h1 {
         font-size: var(--font-size-24px);
+    }
+    .mobile-menu {
+        display: block;
+    }
+    header nav {
+        display: none;
     }
 }
