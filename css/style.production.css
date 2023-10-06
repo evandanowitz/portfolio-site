@@ -382,6 +382,10 @@ td, th {
     max-width: 100%;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 @keyframes typing {
     from { width: 0 }
     to { width: 152% }
@@ -417,5 +421,20 @@ td, th {
     }
     h1 {
         font-size: 24px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    /* shared code for above media queries */
+
+    .mobile-menu {
+        display: block;
+    }
+    header nav {
+        display: none;
+    }
+    .page-header__item:first-child {
+        float: none;
+        margin: 0 auto;
     }
 }
