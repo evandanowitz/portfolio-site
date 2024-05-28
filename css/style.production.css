@@ -199,10 +199,9 @@ td, th {
 .work-headers {
     text-align: center;
 }
-.view-work-link {
-    text-decoration: underline;
+.view-work-link, .view-gh-repo, .view-screenshot {
+  text-decoration: underline;
 }
-
 .contact-information {
     margin: 20px;
     text-align: center;

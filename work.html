@@ -3,91 +3,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Work - Evan Danowitz</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/Normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Work - Evan Danowitz</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/Normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Ysabeau+Office:wght@400;700&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header class="page-header">
-        <img class="page-header__item" src="img/FullLogo.png" alt="Logo Image">
-        <nav class="navigation-menu page-header__item borderYtoX">
-            <a href="index.html" role="menuitem" class="navigation-menu__item">HOME</a>
-            <a href="work.html" role="menuitem" class="navigation-menu__item navigation-menu__item--active">WORK</a>
-            <a href="about.html" role="menuitem" class="navigation-menu__item">ABOUT</a>
-            <a href="contact.html" role="menuitem" class="navigation-menu__item">CONTACT</a>
-        </nav>
-    </header>
+  <header class="page-header">
+    <img class="page-header__item" src="img/FullLogo.png" alt="Logo Image">
+    <nav class="navigation-menu page-header__item borderYtoX">
+      <a href="index.html" role="menuitem" class="navigation-menu__item">HOME</a>
+      <a href="work.html" role="menuitem" class="navigation-menu__item navigation-menu__item--active">WORK</a>
+      <a href="about.html" role="menuitem" class="navigation-menu__item">ABOUT</a>
+      <a href="contact.html" role="menuitem" class="navigation-menu__item">CONTACT</a>
+    </nav>
+  </header>
 
-    <div>
-        <h1>Now, some of the good stuff...</h1>
+  <div>
+    <h1>Now, some of the good stuff...</h1>
+  </div>
+
+  <section>
+    <div class="grid">
+      <div class="grid__item">
+        <h2 class="work-headers">Pokédex</h2>
+        <p class="work__description">JavaScript app that communicates with an external API</p>
+        <a class="view-work-link" href="https://evandanowitz.github.io/pokedex-app/" target="_blank">View Pokédex</a>
+        <br>
+        <a class="view-gh-repo" href="https://github.com/evandanowitz/pokedex-app.git" target="_blank">GitHub
+          Repository</a>
+        <!-- <img id="pokedex-img1-img" src="img/pokedex-img1.png"> -->
+        <!-- <img id="pokedex-img2-img" src="img/pokedex-img2.png"> -->
+        <br>
+        <button class="view-details-btn">View Screenshot</button>
+      </div>
+      <div class="grid__item">
+        <h2 class="work-headers">MyFlix</h2>
+        <p class="work__description">Frontend React API for RESTful API, built with React</p>
+        <a class="view-work-link" href="https://myflixdbapp.netlify.app/" target="_blank">View MyFlix</a>
+        <br>
+        <a class="view-gh-repo" href="https://github.com/evandanowitz/myFlix-client.git" target="_blank">GitHub
+          Repository</a>
+        <br>
+        <button class="view-details-btn">View Screenshot</button>
+      </div>
+      <div class="grid__item">
+        <h2 class="work-headers">MyFlix API</h2>
+        <p class="work__description">Complete full-stack app with a Node.js and Express backend for my REST API</p>
+        <a class="view-work-link" href="https://github.com/evandanowitz/movie_api.git" target="_blank">GitHub
+          Repository</a>
+        <br>
+        <button class="view-details-btn">View Screenshot</button>
+      </div>
+      <div class="grid__item">
+        <h2 class="work-headers">Meetup</h2>
+        <p class="work__description">Serverless PWA that fetches data from Google Calendar API using React</p>
+        <a class="view-work-link" href="https://evandanowitz.github.io/meetup-app/" target="_blank">View Meetup</a>
+        <br>
+        <a class="view-gh-repo" href="https://github.com/evandanowitz/meetup-app.git" target="_blank">GitHub
+          Repository</a>
+        <br>
+        <button class="view-details-btn">View Screenshot</button>
+      </div>
+      <div class="grid__item">
+        <h2 class="work-headers">To-Do List</h2>
+        <p class="work__description">To-do list app created using jQuery</p>
+        <a class="view-work-link" href="https://evandanowitz.github.io/to-do-list-app/" target="_blank">View Project</a>
+        <br>
+        <a class="view-gh-repo" href="https://github.com/evandanowitz/to-do-list-app.git" target="_blank">GitHub
+          Repository</a>
+        <br>
+        <button class="view-details-btn">View Screenshot</button>
+      </div>
+      <div class="grid__item">
+        <h2 class="work-headers">Project 6</h2>
+        <p class="work__description">JavaScript chat app built with React Native, featuring advanced functionality
+          such as offline storage or geolocation</p>
+        <a class="view-work-link" href="#" target="_blank">View Project</a>
+        <a class="view-gh-repo" href="https://github.com/evandanowitz/to-do-list-app.git" target="_blank">GitHub
+          Repository</a>
+        <br>
+        <button class="view-details-btn">View Screenshot</button>
+      </div>
+      <div class="grid__item">
+        <h2 class="work-headers">Project 7</h2>
+        <p class="work__description">A version of my React app with Angular</p>
+        <a class="view-work-link" href="#" target="_blank">View Project</a>
+        <a class="view-gh-repo" href="https://github.com/evandanowitz/to-do-list-app.git" target="_blank">GitHub
+          Repository</a>
+        <br>
+        <button class="view-details-btn">View Screenshot</button>
+      </div>
     </div>
+  </section>
 
-    <section>    
-        <div class="grid">
-            <!-- Grid items will live here -->
-            <div class="grid__item">
-                <h2 class="work-headers">Mobile Web App</h2>
-                <p class="work__description">Within this project, I was responsible for the frontend. It's written in React.js. Additionaly, I've created the HTML and CSS templates.</p>
-                <a class="view-work-link" href="#">View project on Github</a>
-            </div>
-            <div class="grid__item">
-                <h2 class="work-headers">Philly Sports Blog</h2>
-                <p class="work__description">In this project, I created a site for blogging all things Philadelphia Eagles football.</p>
-                <a class="view-work-link" href="#">View Eagles Blog project</a>
-            </div>
-            <div class="grid__item">
-                <h2 class="work-headers">Reptile Shop Site</h2>
-                <p class="work__description">I have created a website to display reptile care products as well as articles on how to care for them.</p>
-                <a class="view-work-link" href="#">View Reptiles and Beyond project</a>
-            </div>
-            <div class="grid__item">
-                <h2 class="work-headers">Twitter Alternative</h2>
-                <p class="work__description">In this project, I was responsible for creating a replica of Twitter.</p>
-                <a class="view-work-link" href="#">View Twitter alternative project</a>
-            </div>
-            <div class="grid__item">
-                <h2 class="work-headers">Instagram Alternative</h2>
-                <p class="work__description">Here, I was responsible for constructing a site that is an alternative to Instagram.</p>
-                <a class="view-work-link" href="#">View Instagram alternative project</a>
-            </div>
-            <div class="grid__item">
-                <h2 class="work-headers">YouTube Alternative</h2>
-                <p class="work__description">Here, I was responsible for constructing a site that is an alternative to YouTube.</p>
-                <a class="view-work-link" href="#">View YouTube alternative project</a>
-            </div>
-        </div>
-    </section>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/evandanowitz" target="_blank">
+        <img src="img/githublogo.svg" height="40" width="40" alt="Github"></a>
+      <a href="https://www.twitter.com" target="_blank">
+        <img src="img/twitterlogo.svg" height="40" width="40" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/evandanowitz" target="_blank">
+        <img src="img/linkedinlogo.svg" height="40" width="40" alt="LinkedIn"></a>
+    </div>
+  </footer>
 
-    <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <a href="https://github.com/evandanowitz" target="_blank">
-                <img src="img/githublogo.svg" height="40" width="40" alt="Github"></a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img src="img/twitterlogo.svg" height="40" width="40" alt="Twitter"></a>
-            <a href="https://www.linkedin.com/in/evandanowitz" target="_blank">
-                <img src="img/linkedinlogo.svg" height="40" width="40" alt="LinkedIn"></a>
-        </div>
-    </footer>
-    
-    <a href="#">Back to top</a>
-    
-    <script src="js/tota11y.min.js"></script>
+  <a href="#">Back to top</a>
 
+  <script src="js/tota11y.min.js"></script>
 </body>
 
 </html>
