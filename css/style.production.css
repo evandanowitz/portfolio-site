@@ -385,6 +385,41 @@ td, th {
     display: none;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.image-container img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
 @keyframes typing {
     from { width: 0 }
     to { width: 152% }
@@ -422,7 +457,6 @@ td, th {
         font-size: 24px;
     }
 }
-
 @media all and (max-width: 1000px) {
     /* shared code for above media queries */
 
