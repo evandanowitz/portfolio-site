@@ -40,6 +40,7 @@
 
   <section>
     <div class="grid">
+
       <div class="grid__item">
         <h2 class="work-headers">Pokédex</h2>
         <p class="work__description">JavaScript app that communicates with an external API</p>
@@ -47,11 +48,34 @@
         <br>
         <a class="view-gh-repo" href="https://github.com/evandanowitz/pokedex-app.git" target="_blank">GitHub
           Repository</a>
-        <!-- <img id="pokedex-img1-img" src="img/pokedex-img1.png"> -->
-        <!-- <img id="pokedex-img2-img" src="img/pokedex-img2.png"> -->
         <br>
-        <button class="view-details-btn">View Screenshot</button>
+        <button class="view-details-btn" onClick="openModal('pokedex-modal')">More Details</button>
+        <div id="pokedex-modal" class="modal">
+          <div class="modal-content">
+            <h2>Screenshots</h2>
+            <div class="image-container">
+              <img src="img/pokedex-screenshot2.png" alt="Pokedex Image 2">
+              <img src="img/pokedex-screenshot3.png" alt="Pokedex Image 3">
+              <img src="img/pokedex-screenshot.png" alt="Pokedex Image 1">
+            </div>
+            <div>
+              <h2>Objective</h2>
+              <p>To build a small web application with HTML, CSS, and JavaScript that loads
+                data from an external API and enables the viewing of data points in detail.</p>
+              <h2>Technologies Used</h2>
+              <li>JavaScript</li>
+              <li>CSS</li>
+              <li>External API</li>
+              <li>ESLint</li>
+              <li>Prettier</li>
+              <li>Modals</li>
+              <li>GitHub Pages</li>
+            </div>
+            <button onClick="closeModal('pokedex-modal')">Close</button>
+          </div>
+        </div>
       </div>
+
       <div class="grid__item">
         <h2 class="work-headers">MyFlix</h2>
         <p class="work__description">Frontend React API for RESTful API, built with React</p>
@@ -60,16 +84,64 @@
         <a class="view-gh-repo" href="https://github.com/evandanowitz/myFlix-client.git" target="_blank">GitHub
           Repository</a>
         <br>
-        <button class="view-details-btn">View Screenshot</button>
+        <button class="view-details-btn" onClick="openModal('myflix-modal')">More Details</button>
+        <div id="myflix-modal" class="modal">
+          <div class="modal-content">
+            <h2>Screenshots</h2>
+            <div class="image-container">
+              <img src="img/myflix-screenshot3.png" alt="MyFlix Image 3">
+              <img src="img/myflix-screenshot4.png" alt="MyFlix Image 4">
+              <img src="img/myflix-screenshot.png" alt="MyFlix Image 1">
+              <img src="img/myflix-screenshot2.png" alt="MyFlix Image 2">
+            </div>
+            <div>
+              <h2>Objective</h2>
+              <p>Using React, build the client-side for an app called myFlix based on its
+                existing server-side code (REST API and database).</p>
+              <h2>Technologies Used</h2>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Single-page application (SPA)</li>
+              <li>State routing</li>
+              <li>Parcel</li>
+              <li>Bootstrap (UI library)</li>
+              <li>Function components</li>
+              <li>Netlify</li>
+
+            </div>
+            <button onClick="closeModal('myflix-modal')">Close</button>
+          </div>
+        </div>
       </div>
+
       <div class="grid__item">
         <h2 class="work-headers">MyFlix API</h2>
         <p class="work__description">Complete full-stack app with a Node.js and Express backend for my REST API</p>
         <a class="view-work-link" href="https://github.com/evandanowitz/movie_api.git" target="_blank">GitHub
           Repository</a>
         <br>
-        <button class="view-details-btn">View Screenshot</button>
+        <button class="view-details-btn" onClick="openModal('myflixapi-modal')">More Details</button>
+        <div id="myflixapi-modal" class="modal">
+          <div class="modal-content">
+            <div>
+              <h2>Objective</h2>
+              <p>To build the server-side component of a “movies” web application. The web
+                application will provide users with access to information about different
+                movies, directors, and genres. Users will be able to sign up, update their
+                personal information, and create a list of their favorite movies.</p>
+              <h2>Technologies Used</h2>
+              <li>MERN stack (MongoDB, Express, React, Node.js)</li>
+              <li>REST architecture</li>
+              <li>Middleware modules (body-parser, morgan)</li>
+              <li>Mongoose</li>
+              <li>Postman</li>
+              <li>Heroku</li>
+            </div>
+            <button onClick="closeModal('myflixapi-modal')">Close</button>
+          </div>
+        </div>
       </div>
+
       <div class="grid__item">
         <h2 class="work-headers">Meetup</h2>
         <p class="work__description">Serverless PWA that fetches data from Google Calendar API using React</p>
@@ -78,8 +150,36 @@
         <a class="view-gh-repo" href="https://github.com/evandanowitz/meetup-app.git" target="_blank">GitHub
           Repository</a>
         <br>
-        <button class="view-details-btn">View Screenshot</button>
+        <button class="view-details-btn" onClick="openModal('meetup-modal')">More Details</button>
+        <div id="meetup-modal" class="modal">
+          <div class="modal-content">
+            <h2>Screenshots</h2>
+            <div class="image-container">
+              <img src="img/meetup-screenshot.png" alt="Meetup Image 1">
+              <img src="img/meetup-screenshot3.png" alt="Meetup Image 3">
+              <img src="img/meetup-screenshot2.png" alt="Meetup Image 2">
+            </div>
+            <div>
+              <h2>Objective</h2>
+              <p>To build a serverless, progressive web application (PWA) with React using a
+                test-driven development (TDD) technique. The application uses the Google
+                Calendar API to fetch upcoming events.</p>
+              <h2>Technologies Used</h2>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>TDD technique</li>
+              <li>Google Calendar API</li>
+              <li>OAuth2</li>
+              <li>Serverless Functions (AWS Lambda)</li>
+              <li>Lighthouse</li>
+              <li>GitHub Pages</li>
+              <li>OOP paradigm</li>
+            </div>
+            <button onClick="closeModal('meetup-modal')">Close</button>
+          </div>
+        </div>
       </div>
+
       <div class="grid__item">
         <h2 class="work-headers">To-Do List</h2>
         <p class="work__description">To-do list app created using jQuery</p>
@@ -88,8 +188,26 @@
         <a class="view-gh-repo" href="https://github.com/evandanowitz/to-do-list-app.git" target="_blank">GitHub
           Repository</a>
         <br>
-        <button class="view-details-btn">View Screenshot</button>
+        <button class="view-details-btn" onClick="openModal('todolist-modal')">More Details</button>
+        <div id="todolist-modal" class="modal">
+          <div class="modal-content">
+            <h2>Screenshots</h2>
+            <div class="image-container">
+              <img src="img/todolist-screenshot.png" alt="To-Do List Image">
+            </div>
+            <div>
+              <h2>Objective</h2>
+              <p>This to-do list app will allow a user to add an item to a list, mark an item as done, delete an item
+                from the list, and change the order of items in the list</p>
+              <h2>Technologies Used</h2>
+              <li>JavaScript</li>
+              <li>jQery</li>
+            </div>
+            <button onClick="closeModal('todolist-modal')">Close</button>
+          </div>
+        </div>
       </div>
+
       <div class="grid__item">
         <h2 class="work-headers">Project 6</h2>
         <p class="work__description">JavaScript chat app built with React Native, featuring advanced functionality
@@ -98,8 +216,9 @@
         <a class="view-gh-repo" href="https://github.com/evandanowitz/to-do-list-app.git" target="_blank">GitHub
           Repository</a>
         <br>
-        <button class="view-details-btn">View Screenshot</button>
+        <button class="view-details-btn">More Details</button>
       </div>
+
       <div class="grid__item">
         <h2 class="work-headers">Project 7</h2>
         <p class="work__description">A version of my React app with Angular</p>
@@ -107,8 +226,9 @@
         <a class="view-gh-repo" href="https://github.com/evandanowitz/to-do-list-app.git" target="_blank">GitHub
           Repository</a>
         <br>
-        <button class="view-details-btn">View Screenshot</button>
+        <button class="view-details-btn">More Details</button>
       </div>
+
     </div>
   </section>
 
@@ -127,6 +247,16 @@
   <a href="#">Back to top</a>
 
   <script src="js/tota11y.min.js"></script>
+  <script>
+    function openModal(modalId) {
+      let modal = document.getElementById(modalId);
+      modal.style.display = "block";
+    }
+    function closeModal(modalId) {
+      let modal = document.getElementById(modalId);
+      modal.style.display = "none";
+    }
+  </script>
 </body>
 
 </html>
