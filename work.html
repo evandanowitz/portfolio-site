@@ -209,14 +209,44 @@
       </div>
 
       <div class="grid__item">
-        <h2 class="work-headers">Project 6</h2>
-        <p class="work__description">JavaScript chat app built with React Native, featuring advanced functionality
-          such as offline storage or geolocation</p>
-        <a class="view-work-link" href="#" target="_blank">View Project</a>
-        <a class="view-gh-repo" href="https://github.com/evandanowitz/to-do-list-app.git" target="_blank">GitHub
+        <h2 class="work-headers">Chatterbox</h2>
+        <p class="work__description">Chat app built using React Native, featuring a chat interface, multiple
+          communication features, and offline storage.</p>
+        <a class="view-gh-repo" href="https://github.com/evandanowitz/chat-app" target="_blank">GitHub
           Repository</a>
         <br>
-        <button class="view-details-btn">More Details</button>
+        <button class="view-details-btn" onClick="openModal('chatapp-modal')">More Details</button>
+        <div id="chatapp-modal" class="modal">
+          <div class="modal-content">
+            <h2>Screenshots</h2>
+            <div class="image-container">
+              <img src="img/StartScreen.png" alt="Chatterbox Image 1">
+              <img src="img/ChatScreen.png" alt="Chatterbox Image 2">
+              <img src="img/ActionSheet.png" alt="Chatterbox Image 3">
+            </div>
+            <div>
+              <video controls width="600">
+                <source src="#">
+              </video>
+            </div>
+            <div>
+              <h2>Objective</h2>
+              <p>ChatterBox is a native, mobile chat app built using React Native, Expo, and Google Firestore Database,
+                and is optimized for both Android and iOS devices. The app provides users with a chat interface as well
+                as options to share images and a user's location. It also utilizes offline storage with AsyncStorage to
+                allow users to view messages and data while offline.</p>
+              <h2>Technologies Used</h2>
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Google Firestore Database</li>
+              <li>Google Firebase Authentication</li>
+              <li>Firebase Cloud Storage</li>
+              <li>Gifted Chat library</li>
+              <li>Android Studio</li>
+            </div>
+            <button onClick="closeModal('chatapp-modal')">Close</button>
+          </div>
+        </div>
       </div>
 
       <div class="grid__item">
